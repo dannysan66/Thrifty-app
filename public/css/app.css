@@ -1,0 +1,154 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Satisfy&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f2f0f3;
+}
+
+.btn {
+  padding: 10px 35px;
+  border-radius: 300px;
+}
+
+.btn-primary {
+  background: #5101fe;
+  border-color: #5101fe;
+}
+.btn-primary:hover {
+  background: #260064;
+  border-color: #260064;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.navbar {
+  background: #5111a3;
+}
+.navbar h1 {
+  color: #fff;
+  font-family: "Satisfy", cursive;
+  font-size: 40px;
+  margin-left: 15px;
+}
+.navbar h1:hover {
+  text-shadow: 0 0 20px #fff;
+  filter: brightness(2);
+  cursor: pointer;
+}
+.navbar .nav-item {
+  color: #fff;
+  height: 36px;
+  width: 36px;
+  font-size: 18px;
+  background: #8d36c5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  position: relative;
+  margin-right: 15px;
+}
+.navbar .nav-item .info-count {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ff36f7;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(20%, -20%);
+  color: #fff;
+}
+.navbar .nav-item:hover {
+  background: #fff;
+  color: #5101fe;
+}
+
+.navbar-toggler {
+  margin-right: 10px;
+}
+
+.home-header {
+  background: linear-gradient(to bottom, #5111a3, #d38eff);
+  padding: 100px 25px 120px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  border-radius: 0 0 50% 50%;
+}
+.home-header .home-header-text {
+  text-align: center;
+  color: #fff;
+}
+.home-header .home-header-text .title {
+  font-size: 40px;
+  font-weight: 700;
+}
+.home-header .home-header-text .title .tagline {
+  font-size: 20px;
+  font-weight: 300;
+}
+.home-header .home-header-search {
+  margin-top: 20px;
+}
+.home-header .home-header-search input {
+  height: 35px;
+  width: 300px;
+  max-width: 100%;
+  border-radius: 300px;
+  text-align: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  background: #f2f0f3;
+  border: 2px solid #5101fe;
+}
+.home-header .home-header-search input:focus-visible {
+  outline: none;
+}
+.home-header .home-header-search input:hover {
+  background: #fff;
+}
+
+.login-page {
+  min-height: 100vh;
+  background: url("/img/art.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-area {
+  width: 930px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.box-area .control-label {
+  font-weight: 500;
+}
+.box-area .form-group {
+  margin-bottom: 15px;
+  border-radius: 200px;
+  border: 1px solid #ddd;
+}
+.box-area .form-group .form-control {
+  width: 100%;
+}
+.box-area .form-group .form-control .btn {
+  width: 100% !important;
+}
