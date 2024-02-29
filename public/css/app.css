@@ -140,9 +140,9 @@ body {
 }
 .box-area .control-label {
   font-weight: 500;
+  margin-top: 15px;
 }
 .box-area .form-group {
-  margin-bottom: 15px;
   border-radius: 200px;
   border: 1px solid #ddd;
 }
@@ -151,4 +151,16 @@ body {
 }
 .box-area .form-group .form-control .btn {
   width: 100% !important;
+  margin-top: 25px;
+}
+.box-area .mb-2 {
+  margin-top: 25px;
+}
+@media only screen and (max-width: 768px) {
+  .box-area .catch-two {
+    margin-bottom: 15px;
+  }
+  .box-area .right-box {
+    margin-top: 10px;
+  }
 }

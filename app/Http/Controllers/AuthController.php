@@ -43,7 +43,24 @@ public function showLogin(){
     }
 
     // Login user
+    public function postLogin(Request $request) {
+        // Validate
+       $details = $request->validate([
+            'email' => 'required|email',
+            'password' => 'required'
+       ]);
 
+        // Login
+       if (Auth::attempt($details))
+       {
+        return redirect()->intended('/');
+       }
+
+       return back()->withErrors([
+        'email' => 'Invalid Login Details'
+       ]);
+        // return
+    }
     // Reset password
 
     // Logout
