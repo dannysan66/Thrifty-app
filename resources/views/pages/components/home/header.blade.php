@@ -1,7 +1,7 @@
 <header class="home-header">
     <div class="home-header-text">
         <h2 class="title">Welcome to Thrifty!</h2>
-        <p class="tagline">Explore our selection of styles!</p>
+        <p class="tagline">All items are <b>FREE</b> for all ISHS students!</p>
     </div>
 
     <div class="home-header-search">

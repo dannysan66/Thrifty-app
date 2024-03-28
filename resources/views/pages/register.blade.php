@@ -31,7 +31,7 @@
                         <form action="{{ route('register') }}" method="post">
                             @csrf
 
-                            <label for="name" class="control-label">Name</label>
+                            <label for="name" class="control-label">Full Name</label>
                             <input type="text" id="name" name="name"
                                 class="form-group form-control @error('name') is-invalid border-danger @enderror"
                                 style="max-width: 100%;" placeholder="John Doe">

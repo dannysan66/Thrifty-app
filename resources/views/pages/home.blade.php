@@ -5,11 +5,19 @@
 
 
     @include('pages.components.home.header')
-    @auth
-        <form action="{{ route('logout') }}" method="post">
-            @csrf
-            <button class="btn btn-primary">Logout</button>
-        </form>
-    @endauth
+   
+    <section class="product-section">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="product-row">
+
+                @foreach ($products as $product)
+                    <x-product-box :product="$product" />
+                @endforeach
+
+            </div>
+        </div>
+    </section>
+
 </main>
 @endsection
