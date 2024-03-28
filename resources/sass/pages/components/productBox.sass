@@ -1,0 +1,84 @@
+.product-box
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px
+    background: #ffff
+    overflow: hidden
+    border-radius: 10px
+    text-align: center
+    max-width: 270px
+    transition: all 0.4s ease
+
+    &:hover
+        transform: translate3D(0,-1px,0) scale(1.03)
+        .image
+            background: linear-gradient(to bottom right, #5111a3, #d38eff)
+            
+            .add-to-wishlist
+                display: block
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                font-weight: 400
+                width: 200px
+                max-width: 90%
+                transition: all 0.3s ease
+                cursor: pointer
+
+    .image
+        background: #f6f7f8
+        height: 250px
+        width: 270px
+        max-width: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-bottom: 10px
+        transition: all 0.4s ease
+        position: relative
+        img
+            max-width: 100%
+            max-height: 100%
+        
+        .add-to-wishlist
+            display: none
+
+    a
+        text-decoration: none   
+
+    .product-title
+        font-size: 20px
+        font-weight: 500
+        color: #1B1A55
+        margin-bottom: 10px
+
+    .color-palettes
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 8px
+        margin-bottom: 10px
+        .color-palette
+            width: 20px 
+            height: 5px
+            border-radius: 10px
+
+.product-category
+        color: #6f6f6f
+        font-style: italic
+        font-weight: 200
+        margin-bottom: 10px
+
+.product-price
+            font-size: 18px
+            font-weight: 500
+            margin-bottom: 10px
+
+.product-catch
+                font-size: 20px
+                font-weight: 600
+                color: #FF204E
+                margin-bottom: 10px
+
+
+        
+        

@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Satisfy&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f2f0f3;
+}
+
+.btn {
+  padding: 10px 35px;
+  border-radius: 300px;
+  margin-left: 15px;
+}
+
+.btn-primary {
+  background: #5101fe;
+  border-color: #5101fe;
+}
+.btn-primary:hover {
+  background: #260064;
+  border-color: #260064;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.admin-main {
+  padding: 15px 35px;
+}
+
+.page-title {
+  margin-bottom: 15px;
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.table th {
+  position: sticky;
+  top: 0px;
+}
+
+h1 {
+  color: #fff;
+  font-family: "Satisfy", cursive;
+  font-size: 45px;
+  margin-left: 10px;
+}
+h1:hover {
+  text-shadow: 0 0 20px #fff;
+  filter: brightness(2);
+  cursor: pointer;
+}
+
+.nav-pills li a:hover {
+  background-color: #5101fe;
+}
+
+.btn {
+  margin-bottom: 25px;
+}
