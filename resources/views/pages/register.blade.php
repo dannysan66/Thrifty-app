@@ -14,7 +14,7 @@
                     <img src="{{ url('/img/register-img.png') }}" alt="Join Us-" class="img-fluid"
                         style="width: 250px;">
                 </div>
-                <p class="text-white fs-2 catch-one" style="font-family: 'Satisfy', cursive; font-weight: 550;">Register
+                <p class="text-white fs-2 catch-one" style="font-family: 'Satisfy', cursive; font-weight: 550; text-align: center;">Register
                     With Us To Start Shopping!</p>
                 <small class="text-white text-wrap text-center catch-two"
                     style="width: 17rem; font-family: 'Poppins', sans-serif;">We have a wide selection of

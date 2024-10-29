@@ -43,7 +43,7 @@ Route::post('/remove-from-cart/{id}', [CartController::class, 'removeFromCart'])
 
 // Wishlist
 Route::post('/add-to-wishlist/{id}', [WishlistController::class, 'post'])->name('addToWishlist')->middleware('auth');
-Route::post('/remove-to-wishlist/{id}', [WishlistController::class, 'remove'])->name('removeFromWishlist')->middleware('auth');
+Route::post('/remove-from-wishlist/{id}', [WishlistController::class, 'remove'])->name('removeFromWishlist')->middleware('auth');
 
 
 // Auth
@@ -87,7 +87,9 @@ Route::group(['prefix'=> 'adminpanel', 'middleware' => 'admin'], function() {
     Route::group(['prefix' => 'orders'], function() {
         Route::get('/', [OrderController::class, 'index'])->name('adminpanel.orders');
         Route::get('/{id}', [OrderController::class, 'view'])->name('adminpanel.orders.view');
-        Route::post('/{id}', [OrderController::class, 'updateStatus'])->name('adminpanel.orders.status.update');
+        // Route::post('/{id}', [OrderController::class, 'updateStatus'])->name('adminpanel.orders.status.update');
+        Route::post('adminpanel/orders/{id}/status', [OrderController::class, 'updateStatus'])->name('adminpanel.orders.status.update');
+
     });
     
 });

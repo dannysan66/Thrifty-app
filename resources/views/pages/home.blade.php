@@ -8,7 +8,7 @@
    
     <section class="product-section">
         <div class="container">
-            <h2 class="section-title">Featured Products</h2>
+            <h2 class="section-title" style="font-size: 40px; margin-bottom: 50px;">Featured Products</h2>
             <div class="product-row">
 
                 @foreach ($products as $product)

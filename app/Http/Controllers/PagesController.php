@@ -24,8 +24,15 @@ class PagesController extends Controller
     // Wishlist
     public function wishlist()
     {
-        $products = Auth::user()->wishlist;
-        return view('pages.wishlist', ['products' => $products]);
+        // Check if the user is authenticated
+        if (Auth::check()) {
+            // Get the user's wishlist products
+            $products = Auth::user()->wishlist; // Ensure this returns a collection of products
+            return view('pages.wishlist', ['products' => $products]);
+        }
+    
+        // If not authenticated, you might want to redirect to the login page or show a message
+        return redirect()->route('login')->with('error', 'You need to log in to view your wishlist.');
     }
 
     // Account

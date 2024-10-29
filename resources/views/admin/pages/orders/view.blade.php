@@ -22,7 +22,7 @@
                             <tr>
                                 <td>Status</td>
                                 <td>
-                                    <form action="{{ 'adminpanel.orders.status.update', $order->id }}" method="post" style="display: flex; gap: 15px; max-width: 100%;">
+                                    <form action="{{ route('adminpanel.orders.status.update', $order->id) }}" method="post" style="display: flex; gap: 15px; max-width: 100%;">
                                         @csrf
                                         <select name="status" id="" class="form-control" style="max-height: 45px">
                                             @foreach ($states as $status)

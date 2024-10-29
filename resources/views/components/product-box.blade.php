@@ -1,10 +1,24 @@
 <section class="product-box">
     <div class="image">
         <img src="{{ asset('storage/'.$product->image) }}" alt="Product-img">
+        @auth
+            @if (auth()->user()->wishlist->contains($product))
+                <form action="{{ route('removeFromWishlist', $product->id) }}" method="post">
+                    @csrf
+                    <button class="add-to-wishlist btn btn-secondary" type="submit">Remove From Wishlist</button>
+                </form>  
+            @else
+                <form action="{{ route('addToWishlist', $product->id) }}" method="post">
+                    @csrf
+                    <button class="add-to-wishlist btn btn-secondary" type="submit">Add To Wishlist</button>
+                </form> 
+            @endif
+        @else
         <form action="{{ route('addToWishlist', $product->id) }}" method="post">
             @csrf
             <button class="add-to-wishlist btn btn-secondary" type="submit">Add To Wishlist</button>
-        </form>
+        </form> 
+        @endauth
     </div>
     <a href="{{ route('product', $product->id) }}">
     <div class="product-title">{{ $product->title }}</div>

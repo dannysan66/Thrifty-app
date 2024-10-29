@@ -11,5 +11,4 @@ class Wishlist extends Model
 
     protected $guarded = [];
 
-    
 }

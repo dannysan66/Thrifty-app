@@ -22,6 +22,9 @@ class OrderController extends Controller
 
     public function updateStatus($id, Request $request)
     {
-        // Order::findOrFail($id)->update(['status' -> 'processing']);
+        $order = Order::findOrFail($id);
+        $order->update(['status' => $request->input('status')]);
+       // Return response
+       return back()->with('success', 'Status Updated!');
     }
 }

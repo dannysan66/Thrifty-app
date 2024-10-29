@@ -9,13 +9,13 @@ class WishlistController extends Controller
 {
     public function post($id)
     {
-        dd($id);
         Auth::user()->wishlist()->attach($id);
         return back();
     }
 
     public function remove($id)
     {
-        return 'Remove';
+        Auth::user()->wishlist()->detach($id);
+        return back();
     }
 }
