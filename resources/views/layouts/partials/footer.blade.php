@@ -1,6 +1,6 @@
 
 <!------Contact Us Section------>
-<section id="footer" style="background: #330d68; padding-left: 20px; padding-top: 25px;">
+<section id="footer" style="background: #330d68; padding-left: 6%; padding-top: 25px;">
     {{-- <img src="{{ url('/img/wave1.png') }}" class="footer-img" alt=""> --}}
     <div class="container" style="margin-right: 0; margin-left: 0;">
         <div class="row">

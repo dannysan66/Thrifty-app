@@ -38,7 +38,7 @@
                                 <td>${{ $order->total }}</td>
                             </tr>
                             <tr>
-                                <td>User</td>
+                                <td>Student</td>
                                 <td>{{ $order->user->name }}</td>
                             </tr>
                             <tr>

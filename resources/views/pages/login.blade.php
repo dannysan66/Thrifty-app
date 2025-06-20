@@ -17,7 +17,7 @@
                     Start Shopping!</p>
                 <small class="text-white text-wrap text-center catch-two"
                     style="width: 17rem; font-family: 'Poppins', sans-serif;">We have a wide selection of
-                    clothing.</small>
+                    merch.</small>
             </div>
 
 
@@ -49,7 +49,7 @@
                                 </div>
                             @enderror
 
-                            <div class="input-group mb-5 d-flex justify-content-between">
+                            <div class="input-group mb-5 d-flex justify-content-between" style="padding-top: 10px">
                                 <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="formCheck">
                                     <label for="formCheck" class="form-check-label text-secondary"><small>Remember

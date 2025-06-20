@@ -2,6 +2,9 @@
 @section('title', $product->title)
 @section('content')
 
+
+<div class="accounts-page">
+<div class="container">
 @if (session()->has('addedToCart'))
     <section class="pop-up">
         <div class="pop-up-box bg-dark">
@@ -49,6 +52,9 @@
             </section>
         </div>
     </div>
+</div>
+</div>
+
 </div>
 
 
